@@ -1,0 +1,18 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+
+#G=nx.Graph()
+#G=nx.path_graph(10)
+#G=nx.complete_graph(4)
+G=nx.gnp_random_graph(6, 2)
+
+#G.add_node('R1')
+#G.add_node('R2')
+#G.add_node('R3')
+
+#G.add_edge('R1','Sw1')
+
+print(nx.info(G))
+
+nx.draw(G, with_labels=1)
+plt.show()
